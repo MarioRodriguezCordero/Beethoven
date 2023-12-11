@@ -6,4 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".inicioSesion">
 
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="183dp"
+        android:ems="10"
+        android:hint="Nombre de Usuario"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etContraseña"
+        android:layout_width="219dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsuario" />
+
+    <Button
+        android:id="@+id/btInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="76dp"
+        android:onClick="inicio"
+        android:text="Iniciar sesion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContraseña" />
+
+    <Button
+        android:id="@+id/btVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="54dp"
+        android:onClick="volverIn"
+        android:text="Volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btInicio" />
 </androidx.constraintlayout.widget.ConstraintLayout>

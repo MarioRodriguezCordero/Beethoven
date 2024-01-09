@@ -39,4 +39,9 @@ public class PantallaPrincipal extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void accederAlPerfil() {
+        Intent intent = new Intent();
+        startActivity(intent);
+    }
 }
